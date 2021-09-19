@@ -139,7 +139,7 @@ class CameraActivity : AppCompatActivity() {
         setContentView(R.layout.activity_camera)
 
         askCameraPermission()
-        startScanning.setOnClickListener {
+        btnXTakePhoto.setOnClickListener {
             takePhoto()
         }
     }

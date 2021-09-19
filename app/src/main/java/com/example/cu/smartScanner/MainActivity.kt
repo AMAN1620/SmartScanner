@@ -5,6 +5,7 @@ import android.graphics.Bitmap
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.provider.MediaStore
+import com.example.cu.smartScanner.barcode.BarcodeActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -25,6 +26,9 @@ class MainActivity : AppCompatActivity() {
         }
         cameraXActivity.setOnClickListener {
             startActivity(Intent(this,CameraActivity::class.java))
+        }
+        btnBarcodeActivity.setOnClickListener {
+            startActivity(Intent(this,BarcodeActivity::class.java))
         }
 
     }

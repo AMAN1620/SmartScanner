@@ -16,8 +16,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.SmartScanner">
-        <activity android:name="com.example.cu.smartScanner.CameraActivity"></activity>
-        <activity android:name="com.example.cu.smartScanner.MainActivity">
+        <activity android:name=".barcode.BarcodeActivity"/>
+        <activity android:name=".BaseLensActivity"></activity>
+        <activity android:name=".CameraActivity" />
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
