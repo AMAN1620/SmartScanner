@@ -54,6 +54,7 @@ dependencies {
     implementation "androidx.camera:camera-view:1.0.0-alpha15"
     implementation "androidx.camera:camera-extensions:1.0.0-alpha15"
 
+    implementation 'org.jsoup:jsoup:1.13.1'
 
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'

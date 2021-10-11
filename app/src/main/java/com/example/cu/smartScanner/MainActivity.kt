@@ -19,11 +19,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        btnTakePhoto.setOnClickListener {
-            val takePhotoIntent = Intent(MediaStore.ACTION_IMAGE_CAPTURE)
-            startActivityForResult(takePhotoIntent, PHOTO_REQ_CODE)
-
-        }
         cameraXActivity.setOnClickListener {
             startActivity(Intent(this,CameraActivity::class.java))
         }
@@ -33,12 +28,4 @@ class MainActivity : AppCompatActivity() {
 
     }
 
-    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
-        if(requestCode == PHOTO_REQ_CODE){
-            val bitmap = data?.extras?.get(EXTRA_DATA) as Bitmap
-            imgThumb.setImageBitmap(bitmap)
-            return
-        }
-        super.onActivityResult(requestCode, resultCode, data)
-    }
 }

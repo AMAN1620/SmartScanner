@@ -5,7 +5,7 @@ import com.example.cu.smartScanner.BaseLensActivity
 
 class BarcodeActivity: BaseLensActivity() {
 
-    override val imageAnalyzer = BarcodeAnalyzer()
+    override val imageAnalyzer = BarcodeAnalyzer(supportFragmentManager)
     override fun startScanner() {
         scanBarcode()
     }

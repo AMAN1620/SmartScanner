@@ -9,16 +9,6 @@
     android:gravity="center"
     tools:context=".MainActivity">
 
-    <ImageView
-        android:id="@+id/imgThumb"
-        android:layout_width="200dp"
-        android:layout_height="200dp"/>
-    <Button
-        android:id="@+id/btnTakePhoto"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Take Photo"/>
-
     <Button
         android:id="@+id/cameraXActivity"
         android:layout_width="wrap_content"
