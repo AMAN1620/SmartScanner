@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">SmartScanner</string>
+    <string name="barcode_scanner">Barcode Scanner</string>
+    <string name="text_scanner">Text Scanner</string>
 </resources>
