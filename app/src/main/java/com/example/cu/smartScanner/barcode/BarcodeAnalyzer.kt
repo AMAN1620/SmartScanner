@@ -27,6 +27,7 @@ class BarcodeAnalyzer(private val fragmentManager: FragmentManager)
 
     @SuppressLint("UnsafeExperimentalUsageError")
     override fun analyze(imageProxy: ImageProxy) {
+
         Log.d("BARCODE", "image analysed")
 
         imageProxy.image?.let {

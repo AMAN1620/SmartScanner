@@ -6,6 +6,8 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.provider.MediaStore
 import com.example.cu.smartScanner.barcode.BarcodeActivity
+import com.example.cu.smartScanner.imageLabeler.ImageLabelingActivity
+import com.example.cu.smartScanner.textRecog.TextRecognitionActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -25,6 +27,13 @@ class MainActivity : AppCompatActivity() {
         btnBarcodeActivity.setOnClickListener {
             startActivity(Intent(this,BarcodeActivity::class.java))
         }
+        btnImageLabelActivity.setOnClickListener {
+            startActivity(Intent(this,ImageLabelingActivity::class.java))
+        }
+        btnTextRecogActivity.setOnClickListener {
+            startActivity(Intent(this,TextRecognitionActivity::class.java))
+        }
+
 
     }
 
